@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="i class=" fa fa-paint-brush aria-hidden="true">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#2196f3">
+    <title>To-Do List - PWA Version</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="manifest" href="manifest.json">
+</head>
+<body>
+    <header>
+        <nav>
+            <img src="todoicon.png" alt=>
+            <ul>
+                <li>
+                    <button>About</button>
+                </li>
+                <li>
+                    <button onclick="clearList()">Clear List</button>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="mainConteiner">
+            <img src="todoicon.png" alt="img">
+            <div class="boxList">
+                <div class="addList">
+                    <input type="text" id="taskInput" placeholder="Add Task">
+                    <img onclick="addTask()" src="add.png" alt=>
+                    <!-- <button>Add</button> -->
+                </div>
+                <div class="taskListConteiner">
+                    <ul id="taskList">
+                        <!-- Task List added here -->
+                    </ul>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>Development: Igor R.</p>
+    </footer>
+    <script src="app.js"></script>
+</body>
+</html>
